@@ -63,6 +63,10 @@ public:
    * @param z The measurement at k+1
    */
   void UpdateEKF(const Eigen::VectorXd &z);
+    
+    Eigen::VectorXd H_function(const Eigen::VectorXd &x_);
+    Eigen::VectorXd inverse_H_function(const Eigen::VectorXd &x_);
+
 
 };
 
